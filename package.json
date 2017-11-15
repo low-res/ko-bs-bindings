@@ -1,0 +1,39 @@
+{
+  "name": "ko-bs-bindings",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/low-res/ko-bs-bindings.git"
+  },
+  "license": "MIT",
+  "format": "amd",
+  "jspm": {
+    "main": "index",
+    "directories": {
+      "lib": "src",
+      "test": "tests"
+    },
+    "dependencies": {
+      "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.47",
+      "jquery": "npm:jquery@^3.2.1",
+      "knockout": "github:knockout/knockout@^3.4.2",
+      "lodash": "npm:lodash@^4.17.4",
+      "twbs/bootstrap": "github:twbs/bootstrap@^3.3.7"
+    },
+    "devDependencies": {
+      "jasmine-core": "npm:jasmine-core@^2.7.0",
+      "karma": "npm:karma@^1.7.0",
+      "karma-chrome-launcher": "npm:karma-chrome-launcher@^2.2.0",
+      "karma-jasmine": "npm:karma-jasmine@^1.1.0",
+      "karma-systemjs": "npm:karma-systemjs@^0.16.0"
+    }
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.7.0",
+    "jspm": "^0.16.53",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-systemjs": "^0.16.0"
+  }
+}
