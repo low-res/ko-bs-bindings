@@ -1,3 +1,4 @@
+/* */
 define([
     "knockout",
     "jquery",
@@ -17,9 +18,10 @@ define([
                     var value = valueAccessor();
                     console.log( "dp.change", value );
                     if (ko.isObservable(value)) {
-                        if (event.date != null && !(event.date instanceof Date)) {
+                        if (event.date != null && event.date != "" && !(event.date instanceof Date)) {
                             value(event.date.toDate());
                         } else {
+                            if(event.date == "") event.date = null;
                             value(event.date);
                         }
                     }
@@ -43,6 +45,8 @@ define([
                         koDate = new Date(koDate);
                     }
 
+                    if(koDate==undefined) koDate=null;
+
                     //in case return from server datetime i am get in this form for example /Date(93989393)/ then fomat this
                     // koDate = (typeof (koDate) !== 'object') ? new Date( parseFloat(koDate.replace(/[^0-9]/g, ''))) : koDate;
 
@@ -52,8 +56,6 @@ define([
         };
 
     }
-
-
 
 });
 
