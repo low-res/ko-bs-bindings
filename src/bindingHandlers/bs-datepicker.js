@@ -29,7 +29,7 @@ define([
                             }
                         }
                     });
-                }
+
 
                 ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
                     var picker = $(element).data("DateTimePicker");
