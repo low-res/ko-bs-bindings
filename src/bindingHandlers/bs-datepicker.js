@@ -14,18 +14,22 @@ define([
                 $(element).datetimepicker(options);
 
                 //when a user changes the date, update the view model
-                ko.utils.registerEventHandler(element, "dp.change", function (event) {
-                    var value = valueAccessor();
-                    console.log( "dp.change", value );
-                    if (ko.isObservable(value)) {
-                        if (event.date != null && event.date != "" && !(event.date instanceof Date)) {
-                            value(event.date.toDate());
-                        } else {
-                            if(event.date == "") event.date = null;
-                            value(event.date);
+
+                //ko.utils.registerEventHandler(element, "dp.change", function (event) { // <-- this stopped working for unknown reason!? now using jquery.on() as a workaround...
+
+                $(element).on("dp.change",function (event) {
+                        var value = valueAccessor();
+                        console.log( "dp.change", value );
+                        if (ko.isObservable(value)) {
+                            if (event.date != null && event.date != "" && !(event.date instanceof Date)) {
+                                value(event.date.toDate());
+                            } else {
+                                if(event.date == "") event.date = null;
+                                value(event.date);
+                            }
                         }
-                    }
-                });
+                    });
+                }
 
                 ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
                     var picker = $(element).data("DateTimePicker");
