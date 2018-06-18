@@ -3,7 +3,8 @@
  */
 define([
     "knockout",
-    "jquery"
+    "jquery",
+    "twbs/bootstrap"
 ], function( ko, $ ) {
 
     if( ko.bindingHandlers.popover == undefined ) {
@@ -13,10 +14,11 @@ define([
             init: function(element, valueAccessor, allBindings) {
                 var arrayOfLines = ko.unwrap(valueAccessor()).match(/[^#]+/g);
                 var placement = allBindings.get('placement') || 'auto top';
+                var trigger = allBindings.get('trigger') || 'hover';
                 $(element).popover({
                     html:true,
                     animation: true,
-                    trigger:'hover',
+                    trigger: trigger,
                     title: arrayOfLines[0],
                     content: arrayOfLines[1],
                     viewport:'body',
