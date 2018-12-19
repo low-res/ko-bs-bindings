@@ -15,10 +15,10 @@
     },
     "dependencies": {
       "Eonasdan/bootstrap-datetimepicker": "github:Eonasdan/bootstrap-datetimepicker@^4.17.47",
+      "bootstrap": "npm:bootstrap@^3.3.7",
       "jquery": "npm:jquery@^3.2.1",
       "knockout": "github:knockout/knockout@^3.4.2",
-      "lodash": "npm:lodash@^4.17.4",
-      "twbs/bootstrap": "github:twbs/bootstrap@^3.3.7"
+      "lodash": "npm:lodash@^4.17.4"
     },
     "devDependencies": {
       "jasmine-core": "npm:jasmine-core@^2.7.0",
