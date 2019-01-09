@@ -4,7 +4,7 @@
 define([
     "knockout",
     "jquery",
-    "bootstrap"
+    "twbs/bootstrap"
 ], function( ko, $ ) {
 
     if( ko.bindingHandlers.popover == undefined ) {

@@ -1,5 +1,5 @@
 define([
-    "bootstrap",
+    "twbs/bootstrap",
     "Eonasdan/bootstrap-datetimepicker",
     "Eonasdan/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css!css",
     "./bindingHandlers/bs-datepicker",

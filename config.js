@@ -18,6 +18,7 @@ System.config({
     "karma-systemjs": "npm:karma-systemjs@0.16.0",
     "knockout": "github:knockout/knockout@3.4.2",
     "lodash": "npm:lodash@4.17.11",
+    "twbs/bootstrap": "github:twbs/bootstrap@3.4.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -93,7 +94,7 @@ System.config({
     "github:jspm/nodelibs-zlib@0.1.0": {
       "browserify-zlib": "npm:browserify-zlib@0.1.4"
     },
-    "npm:bootstrap@3.3.7": {
+    "github:twbs/bootstrap@3.4.0": {
       "jquery": "npm:jquery@3.3.1"
     },
     "npm:accepts@1.3.1": {
@@ -595,7 +596,7 @@ System.config({
       "statuses": "npm:statuses@1.3.1",
       "unpipe": "npm:unpipe@1.0.0"
     },
-    "npm:follow-redirects@1.5.10": {
+    "npm:follow-redirects@1.6.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "debug": "npm:debug@3.1.0",
@@ -733,7 +734,7 @@ System.config({
     "npm:http-proxy@1.17.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
       "eventemitter3": "npm:eventemitter3@3.1.0",
-      "follow-redirects": "npm:follow-redirects@1.5.10",
+      "follow-redirects": "npm:follow-redirects@1.6.1",
       "http": "github:jspm/nodelibs-http@1.7.1",
       "https": "github:jspm/nodelibs-https@0.1.0",
       "requires-port": "npm:requires-port@1.0.0",
@@ -900,7 +901,7 @@ System.config({
       "querystring": "github:jspm/nodelibs-querystring@0.1.0",
       "range-parser": "npm:range-parser@1.2.0",
       "readline": "github:jspm/nodelibs-readline@0.1.0",
-      "rimraf": "npm:rimraf@2.6.2",
+      "rimraf": "npm:rimraf@2.6.3",
       "safe-buffer": "npm:safe-buffer@5.1.2",
       "socket.io": "npm:socket.io@1.7.3",
       "source-map": "npm:source-map@0.5.7",
@@ -1091,12 +1092,12 @@ System.config({
       "mkdirp": "npm:mkdirp@0.5.1",
       "needle": "npm:needle@2.2.4",
       "nopt": "npm:nopt@4.0.1",
-      "npm-packlist": "npm:npm-packlist@1.1.12",
+      "npm-packlist": "npm:npm-packlist@1.2.0",
       "npmlog": "npm:npmlog@4.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "rc": "npm:rc@1.2.8",
-      "rimraf": "npm:rimraf@2.6.2",
+      "rimraf": "npm:rimraf@2.6.3",
       "semver": "npm:semver@5.6.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2",
       "tar": "npm:tar@4.4.8",
@@ -1121,7 +1122,7 @@ System.config({
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:npm-packlist@1.1.12": {
+    "npm:npm-packlist@1.2.0": {
       "ignore-walk": "npm:ignore-walk@3.0.1",
       "npm-bundled": "npm:npm-bundled@1.0.5",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -1341,7 +1342,7 @@ System.config({
     "npm:repeat-string@0.2.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
-    "npm:rimraf@2.6.2": {
+    "npm:rimraf@2.6.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "glob": "npm:glob@7.1.3",
