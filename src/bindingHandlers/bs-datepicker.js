@@ -46,13 +46,15 @@ define([
                     var koDate = ko.utils.unwrapObservable(valueAccessor());
 
                     if( _.isString(koDate) ) {
+                        if(koDate.length == 19) {
+                            // IE11 can only handle Datetimes in the Format YYYY-MM-DDTHH:MM:SS
+                            // so we need to make sure there is a "T" at position 10
+                            koDate = koDate.substr(0, 10) + 'T' + koDate.substr(10 + 1);
+                        }
                         koDate = new Date(koDate);
                     }
 
                     if(koDate==undefined) koDate=null;
-
-                    //in case return from server datetime i am get in this form for example /Date(93989393)/ then fomat this
-                    // koDate = (typeof (koDate) !== 'object') ? new Date( parseFloat(koDate.replace(/[^0-9]/g, ''))) : koDate;
 
                     picker.date(koDate);
                 }
