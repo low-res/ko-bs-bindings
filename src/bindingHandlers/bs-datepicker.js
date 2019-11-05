@@ -46,7 +46,7 @@ define([
                     var koDate = ko.utils.unwrapObservable(valueAccessor());
 
                     if( _.isString(koDate) ) {
-                        if(koDate.length == 19) {
+                        if(koDate.length == 19 && koDate != "0000-00-00 00:00:00") {
                             // IE11 can only handle Datetimes in the Format YYYY-MM-DDTHH:MM:SS
                             // so we need to make sure there is a "T" at position 10
                             koDate = koDate.substr(0, 10) + 'T' + koDate.substr(10 + 1);
